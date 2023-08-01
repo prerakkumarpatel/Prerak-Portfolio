@@ -1,14 +1,14 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(252, 8, 8, 0.745),
+    rgba(29, 4, 254, 0.478)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(29, 4, 254, 0.478),
+    rgba(252, 8, 8, 0.745)
   );
 
   --imp-text-color: #c770f0;
@@ -52,17 +52,17 @@ button:focus {
 /* --------- */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 3px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #0c0c0cee;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(249, 249, 249, 0.959);
   border-radius: 12px;
 }
 
@@ -76,7 +76,8 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: rgba(193, 52, 232, 0.324) !important;
+
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -98,6 +99,7 @@ button:focus {
 .navbar-toggler span {
   display: block !important;
   background-color: #be50f4 !important;
+
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -151,7 +153,7 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: rgba(8, 252, 24, 0.626) !important;
 }
 
 .logo {
@@ -160,12 +162,14 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: black;
+
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
 
 .nav-link {
+  font-weight: 1000;
   padding: 0.8rem 1rem !important;
 }
 
@@ -181,9 +185,10 @@ button:focus {
 }
 
 .navbar-nav .nav-item a {
-  font-weight: 400;
+  font-weight: lighter;
   transition: all 0.3s ease-out 0s;
   position: relative;
+  color: #000;
   z-index: 1;
 }
 
@@ -191,10 +196,10 @@ button:focus {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  height: 3px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #101010;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -202,6 +207,11 @@ button:focus {
 }
 
 .navbar-nav .nav-item a:hover::after {
+  color: #000;
+  background-color: #000;
+  font-weight: bolder;
+  letter-spacing: 10pt;
+
   width: 100%;
 }
 
@@ -266,7 +276,7 @@ button:focus {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: black;
   text-align: left;
 }
 
@@ -281,17 +291,19 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: rgb(12, 252, 8);
+  letter-spacing: 2pt;
+  font-style: italic;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: rgb(12, 252, 8) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: black !important;
 }
 
 @media (max-width: 767px) {
@@ -304,7 +316,9 @@ button:focus {
     display: none !important;
   }
 }
-
+.img-fluid {
+  border-radius: 900px;
+}
 .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
@@ -314,6 +328,8 @@ button:focus {
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+
+    border-radius: 400px;
   }
 }
 
