@@ -276,7 +276,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: var(--section-background-color);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -346,6 +346,7 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  margin: 3vh 0;
 }
 
 .home-about-description {
@@ -427,6 +428,8 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
+  position: relative;
+  bottom: 0;
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
@@ -577,7 +580,7 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: rgb(15, 169, 1) !important;
 }
 
 .tech-icons {
@@ -634,6 +637,7 @@ button:focus {
 
 .resume-section {
   position: relative !important;
+  min-height: 140vh;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
