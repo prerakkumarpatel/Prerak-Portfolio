@@ -11,7 +11,7 @@ html {
     rgba(252, 8, 8, 0.745)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #05fb0d;
 }
 
 .purple {
@@ -75,14 +75,36 @@ button:focus {
 /* --------- */
 /* Navbar Section  */
 /* --------- */
-.sticky {
-  background-color: rgba(232, 172, 248, 0.624) !important;
+.fixedleft {
+  position: fixed;
+  top: 50%;
+
+  text-decoration: none;
+  right: 0px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
 
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+}
+.half-rounded-button {
+  margin-bottom: 10px;
+  margin-right: 0;
+  border: 3px solid white;
+  border-right: 0px;
+  outline: 30px white;
+  text-decoration: none;
+  padding: 10px 20px;
+  -webkit-margin-end: 0;
+  background-color: #141525;
+  border-radius: 20px 0px 0px 20px;
+  color: rgb(231, 226, 226);
+  cursor: pointer;
 }
 
+/* 
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
@@ -160,7 +182,6 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: black;
   opacity: 1;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
@@ -185,9 +206,12 @@ button:focus {
   font-weight: lighter;
   transition: all 0.3s ease-out 0s;
   position: relative;
-  color: #000;
+  color: #faf9f9;
   opacity: 1;
   z-index: 1;
+}
+.navlink {
+  color: rgb(248 243 243 / 90%);
 }
 
 .navbar-nav .nav-item a::after {
@@ -205,14 +229,14 @@ button:focus {
 }
 
 .navbar-nav .nav-item a:hover::after {
-  color: #080808;
+
   background-color: #000;
   font-weight: bolder;
 
   width: 100%;
 }
 .navbar-nav .nav-item a:hover {
-  color: #080808;
+  color: #f8f6f6;
   font-weight: bolder;
   letter-spacing: 1pt;
   font-size: larger;
@@ -222,7 +246,7 @@ button:focus {
 .navbar-nav .nav-item .active {
   font-weight: bolder;
   font-size: larger;
-}
+} */
 
 /* --------- */
 /* Home section */
@@ -275,17 +299,20 @@ button:focus {
 
 .home-section {
   position: relative;
+
+  padding-right: 5vw !important;
   z-index: -1;
   background-image: var(--section-background-color);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  /* padding-right: 7vw; */
 }
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: black;
+  color: rgb(249, 249, 249);
   text-align: left;
 }
 
