@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
-  DiReact,
+  // DiReact,
   DiNodejs,
   DiMongodb,
   DiPython,
@@ -11,16 +11,16 @@ import {
   DiJava,
 } from "react-icons/di";
 import {
-  SiRedis,
+  // SiRedis,
   SiFirebase,
   SiGraphql,
   SiReact,
   SiCsharp,
   SiNextdotjs,
-  SiSolidity,
+  // SiSolidity,
   SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+// import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (

@@ -17,18 +17,18 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  // const [expand, updateExpanded] = useState(false);
+  // const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
+  // function scrollHandler() {
+  //   if (window.scrollY >= 20) {
+  //     updateNavbar(true);
+  //   } else {
+  //     updateNavbar(false);
+  //   }
+  // }
 
-  window.addEventListener("scroll", scrollHandler);
+  // window.addEventListener("scroll", scrollHandler);
 
   return (
     <Nav className={"fixedleft  ms-auto"} defaultActiveKey="#home">
@@ -39,7 +39,7 @@ function NavBar() {
           }
           as={NavLink}
           to="/"
-          onClick={() => updateExpanded(false)}
+          // onClick={() => updateExpanded(false)}
         >
           <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
         </Nav.Link>
@@ -52,7 +52,7 @@ function NavBar() {
           }
           as={NavLink}
           to="/about"
-          onClick={() => updateExpanded(false)}
+          // onClick={() => updateExpanded(false)}
         >
           <AiOutlineUser style={{ marginBottom: "2px" }} /> About
         </Nav.Link>
@@ -65,7 +65,7 @@ function NavBar() {
           }
           as={NavLink}
           to="/project"
-          onClick={() => updateExpanded(false)}
+          // onClick={() => updateExpanded(false)}
         >
           <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
           Projects
@@ -77,7 +77,7 @@ function NavBar() {
           className={({ isActive }) => (isActive ? "active" : "")}
           as={NavLink}
           to="/resume"
-          onClick={() => updateExpanded(false)}
+          // onClick={() => updateExpanded(false)}
         >
           <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
         </Nav.Link>
