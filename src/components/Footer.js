@@ -14,7 +14,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="me-auto  footer-copywright">
-          <h3>Copyright © {year} Prerak Patel </h3>
+          <h3>Made by ©Patel | Using React</h3>
         </Col>
         <Col md="4" className=" ms-auto footer-body">
           <ul className="footer-icons">

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
+// import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
+// import Container from "react-bootstrap/Container";
+// import logo from "../Assets/logo.png";
+// import Button from "react-bootstrap/Button";
 import { NavLink } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+// import { CgGitFork } from "react-icons/cg";
 // import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
+  // AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -31,15 +31,25 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
-    <Nav className={"fixedleft"} className="ms-auto" defaultActiveKey="#home">
-      <Nav.Item>
-        <Nav.Link as={NavLink} to="/" onClick={() => updateExpanded(false)}>
+    <Nav className={"fixedleft  ms-auto"} defaultActiveKey="#home">
+      <Nav.Item className="half-rounded-button">
+        <Nav.Link
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""
+          }
+          as={NavLink}
+          to="/"
+          onClick={() => updateExpanded(false)}
+        >
           <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
         </Nav.Link>
       </Nav.Item>
 
-      <Nav.Item>
+      <Nav.Item className="half-rounded-button">
         <Nav.Link
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""
+          }
           as={NavLink}
           to="/about"
           onClick={() => updateExpanded(false)}
@@ -48,8 +58,11 @@ function NavBar() {
         </Nav.Link>
       </Nav.Item>
 
-      <Nav.Item>
+      <Nav.Item className="half-rounded-button">
         <Nav.Link
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""
+          }
           as={NavLink}
           to="/project"
           onClick={() => updateExpanded(false)}
@@ -59,8 +72,9 @@ function NavBar() {
         </Nav.Link>
       </Nav.Item>
 
-      <Nav.Item>
+      <Nav.Item className="half-rounded-button">
         <Nav.Link
+          className={({ isActive }) => (isActive ? "active" : "")}
           as={NavLink}
           to="/resume"
           onClick={() => updateExpanded(false)}
