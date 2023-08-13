@@ -33,7 +33,10 @@ function ResumeNew() {
         <Document file={pdf} className="d-flex justify-content-center">
           <Page pageNumber={1} scale={width > 786 ? 1.2 : 0.6} />{" "}
         </Document>
-
+        <div>
+          {" "}
+          <hr />
+        </div>{" "}
         <Document file={pdf} className="d-flex justify-content-center">
           <Page pageNumber={2} scale={width > 786 ? 1.2 : 0.6} />
         </Document>
