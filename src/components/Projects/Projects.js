@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import tarneeb from "../../Assets/Projects/tarneeb.png";
 import expensetracker from "../../Assets/Projects/expensetracker.png";
 import buber from "../../Assets/Projects/buber.png";
+import mern from "../../Assets/Projects/mern.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import dbas from "../../Assets/Projects/dbas.png";
@@ -45,7 +46,16 @@ function Projects() {
               // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mern}
+              isBlog={false}
+              title=" Old Portfolio MERN with "
+              description="Developed a dynamic portfolio using the MERN stack. Seamlessly showcases projects and skills. Implemented a contact form for streamlined communication, managing user inquiries effectively and enhancing engagement."
+              ghLink="https://github.com/prerakkumarpatel/webd6201-render"
+              demoLink="https://webdd6201-prerakpatel.onrender.com/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
