@@ -32,7 +32,7 @@ function Projects() {
               title="Wiscord"
               description="Wiscord revolutionizes personal server rooms with integrated end-to-end messaging. Elevate communication and collaboration within Chatify, inspired by Soumyajit's vision. Seamlessly connect, share, and create together ."
               ghLink="https://github.com/prerakkumarpatel/wiscord-app"
-              demoLink="https://chatify-49.web.app/"
+              demoLink="https://wiscord-app.vercel.app/"
             />
           </Col>
 
