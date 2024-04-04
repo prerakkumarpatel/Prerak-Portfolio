@@ -10,11 +10,11 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Prerak Patel </span>
             from <span className="purple"> Calgary Canada</span>
-            <br /> I am a <span className="purple">CX Specialist</span> at{" "}
+            <br /> I am a <span className="purple">Software Developer</span> at{" "}
             <span className="purple"> Neo Financial </span>
             <br />
             Additionally, I am a{" "}
-            <span className="purple"> Software Developer</span>
+            <span className="purple"> Overthinker by nature</span>
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -24,7 +24,7 @@ function AboutCard() {
               <ImPointRight /> Finance and Money
             </li>
             <li className="about-activity">
-              <ImPointRight /> Watching Science and Knowledge videos
+              <ImPointRight /> Watching Science and Knowledge videos (Ted Talks)
             </li>
             <li className="about-activity">
               <ImPointRight /> Philosophy
