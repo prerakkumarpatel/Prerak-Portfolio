@@ -9,6 +9,11 @@ import {
   SiTwilio,
   SiDatadog,
   SiDatabricks,
+  SiInsomnia,
+  SiSentry,
+  Si1Password,
+  SiConfluence,
+  SiAmazons3,
   SiJira,
 } from "react-icons/si";
 
@@ -31,6 +36,24 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
+      </Col>
+
+      
+      <Col xs={4} md={2} className="tech-icons">
+        <SiInsomnia />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazons3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiConfluence />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSentry />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <Si1Password />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
