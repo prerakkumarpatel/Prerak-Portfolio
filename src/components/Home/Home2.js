@@ -24,14 +24,14 @@ function Home2() {
               <br />
               <br />I am fluent in classic languages like
               <i>
-                <b className="purple"> Javascript , Typescript ,C# , C++ , PHP , Python and Java . </b>
+                <b className="purple"> Typescript,Javascript,C# and C++. </b>
               </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Apps or Projects </b> and
-                also I am interested in areas related to <b className="purple">Cloud.</b>
+                <b className="purple">Web Technologies  </b> and
+                 in areas related to <b className="purple">AWS , micro-services and system design.</b>
               </i>
               <br />
               <br />
